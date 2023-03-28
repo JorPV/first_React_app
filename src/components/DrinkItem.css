@@ -3,8 +3,17 @@
     flex-direction: row;
     margin: 1rem;
     gap: 2rem;
+    max-width: 80%;
 }
 
+
+@media screen and (max-width: 600px) {
+	.wrapper {
+		display: flex;
+		flex-direction: column;
+		gap: 2rem;
+	}
+}
 .drink-item p {
     font-size: 23px;
 }
@@ -20,6 +29,7 @@
     background-color: white;
     border:2px; 
     border-radius: 10px;
+    border-color: black;
     margin: 1rem 0;
     height: 3.5rem;
     width: 150px;
@@ -28,7 +38,7 @@
         /* transform: rotate(-15deg);
         transition: all 0.1s ease-in; */
         cursor: pointer;
-        background-color: aqua;
+        background-color: #9ed2c6;
         animation: pulse 1.3s infinite ease-out;
     }       
         @keyframes pulse {
